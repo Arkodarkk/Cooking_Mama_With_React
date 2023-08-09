@@ -9,7 +9,7 @@ const About = () => {
          <Title />
          <Navigation />
          <div className="about-container">
-            <img src={CookingMamaImage} alt="Image de Cooking Mama" />
+            <img src={CookingMamaImage} alt="Cooking Mama" />
             <div className='presentation'>
                <p className='intro-header'>Bienvenue sur mon site !</p>
                <p className='intro-body'>Ici, vous trouverez toutes les recettes que vous pouvez imaginer et plus encore ! Allez sur la page "Recettes" et commencez vos recherches en renseignant un ingrédient et vous pourrez consulter toute une sélection de fiches alléchantes 😊
