@@ -1,0 +1,62 @@
+.navigation {
+   margin: auto;
+   margin-bottom: 3rem;
+
+   ul {
+      display: flex;
+      justify-content: center;
+      gap: 3rem;
+   
+
+      a {
+         text-decoration: none;
+            
+         li {
+            font-size: 1.8rem;
+            color: $color-4;
+            font-weight: 600;
+            padding: 0 5px;
+            cursor: pointer;
+            transition: 0.2s;
+
+            &:hover {
+               color: $color-1;
+            }
+
+            .nav-active {
+               color: $color-1;
+            }
+         }
+      }
+      
+      .nav-active {
+         position: relative;
+         color: $color-1;
+   
+         &::after {
+            content: "";
+            height: 3px;
+            width: 0;
+            background: $color-1;
+            position: absolute;
+            border-radius: 10px;
+            bottom: 0px;
+            left: 50%;
+            transform: translateX(-50%);
+            -webkit-animation: anim 0.5s ease forwards;
+            animation: anim 0.5s ease forwards;
+   
+            @-webkit-keyframes anim {
+               to {
+               width: 90%;
+               }
+            }
+            @keyframes anim {
+               to {
+               width: 90%;
+               }
+            }
+         }
+      }
+   }
+}

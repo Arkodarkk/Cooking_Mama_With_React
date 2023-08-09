@@ -1,0 +1,16 @@
+.recipes-container {
+
+   .cards-container {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      row-gap: 1rem;
+      margin: 2rem 0 10rem 0;
+   }
+
+   .no-meals {
+      text-align: center;
+      font-size: 20px;
+      color: red;
+      margin-top: 2rem;
+   }
+}

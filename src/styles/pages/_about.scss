@@ -1,0 +1,50 @@
+.about-container {
+   display: flex;
+   justify-content: center;
+   gap: 4rem;
+
+   img {
+      height:400px;
+   }
+
+   .presentation {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+
+      &::before {
+         content: url(../../assets/images/right.webp);
+         position: absolute;
+         top: 10%;
+         left: -5%;
+      }
+
+      &::after {
+         content: url(../../assets/images/left.webp);
+         position: absolute;
+         bottom: 10%;
+         right: -5%;
+      }
+
+      .intro-header {
+         text-align: center;
+         border-radius: 10px 10px 0 0;
+      }
+
+      .intro-body {
+         border-radius: 0 0 10px 10px;
+      }
+
+      p {
+         width: 30vw;
+         font-size: 1.8rem;
+         font-family: $font-3;
+         color: $color-4;
+         background-color: $color-5;
+         padding: 10px 30px 10px 30px;
+         text-align: justify;
+      }
+   }
+
+}
